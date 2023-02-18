@@ -5,8 +5,8 @@ export default function App() {
   return container(
     elem({
       name: "h1",
-      className: "text-3xl underline text-blue-500",
-      child: ["Hello world"],
+      className: "text-3xl text-blue-500",
+      child: ["دیوار"],
     })
   );
 }
