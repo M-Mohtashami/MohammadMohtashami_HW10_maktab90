@@ -1,7 +1,7 @@
 import elem from "../../library/createElement/index";
 
 const variants = {
-  mobile: " bg-trancparent p-2 flex flex-wrap justify-center",
+  mobile: " bg-trancparent p-2 flex flex-wrap justify-center gap-2",
 };
 
 export default function button(text, icon, option, variant = "mobile") {
