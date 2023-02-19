@@ -34,7 +34,7 @@ export default function mobileHeader() {
   return elem({
     name: "div",
     className:
-      "fixed bottom-0 shadow-sm w-full flex justify-between border-t-2",
+      "fixed bottom-0 bg-white shadow-sm w-full flex justify-between border-t-2",
     child: items.map((item) => button(item.text, item.src, item.class)),
   });
 }
