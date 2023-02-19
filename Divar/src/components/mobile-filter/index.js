@@ -69,7 +69,7 @@ export default function mobileFilter() {
   return elem({
     name: "div",
     className:
-      "fixed top-18 shadow w-full flex justify-between border-b-1 p-2 px-4 gap-2 overflow-x-auto scrollbar-hide",
+      "fixed top-16 bg-white bg-opacity-95 shadow w-full flex justify-between border-b-1 py-4 px-4 gap-2 overflow-x-auto scrollbar-hide",
     child: items.map((item) =>
       button(item.text, item.src, item.class, "filter")
     ),
