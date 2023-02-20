@@ -4,7 +4,7 @@ import button from "../../components/button/index";
 const items = [
   {
     text: "املاک",
-    src: "./src/assets/svg/tune.svg",
+    src: "./src/assets/svg/home-city.svg",
     class: "text-gray-400",
   },
   {
@@ -14,42 +14,42 @@ const items = [
   },
   {
     text: "کالای دیجیتال",
-    src: "",
+    src: "./src/assets/svg/cellphone-sound.svg",
     class: "text-gray-400",
   },
   {
     text: "خانه و آشپزخانه",
-    src: "",
+    src: "./src/assets/svg/home-city.svg",
     class: "text-gray-400",
   },
   {
     text: "خدمات",
-    src: "",
+    src: "./src/assets/svg/cellphone-sound.svg",
     class: "text-gray-400",
   },
   {
     text: "وسایل شخصی",
-    src: "",
+    src: "./src/assets/svg/cellphone-sound.svg",
     class: "text-gray-400",
   },
   {
     text: "سرگرمی و فراغت",
-    src: "",
+    src: "./src/assets/svg/gamepad-variant.svg",
     class: "text-gray-400",
   },
   {
     text: "اجتماعی",
-    src: "",
+    src: "./src/assets/svg/group.svg",
     class: "text-gray-400",
   },
   {
     text: "تجهیزات و صنعتی",
-    src: "",
+    src: "./src/assets/svg/gamepad-variant.svg",
     class: "text-gray-400",
   },
   {
     text: "استخدامی و کاریابی",
-    src: "",
+    src: "./src/assets/svg/home-city.svg",
     class: "text-gray-400",
   },
 ];
@@ -57,7 +57,8 @@ const items = [
 export default function filter() {
   return elem({
     name: "div",
-    className: " flex flex-col justify-start items-start gap-2",
+    className:
+      "fixed flex flex-col justify-start items-start gap-2 text-gray-700",
     child: [
       "دسته‌ها",
       ...items.map((item) =>
