@@ -51,10 +51,21 @@ const dataset = [
     src: "./src/assets/img/6.webp",
   },
 ];
-export default function productSection() {
+export default function productSection(options) {
   return elem({
     name: "div",
-    className: "grid grid-cols-1 md:grid-cols-2 gap-4 px-4 mb-20 mt-36",
-    child: dataset.map((item) => product(item)),
+    className: `${options.container} px-4`,
+    child: [
+      elem({
+        name: "div",
+        className: `${options.loc} pb-4 pt-4 text-xs text-gray-400`,
+        child: ["دیوار تهران:‌ انواع آگهی‌ها و خدمات در تهران"],
+      }),
+      elem({
+        name: "div",
+        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4",
+        child: dataset.map((item) => product(item)),
+      }),
+    ],
   });
 }
