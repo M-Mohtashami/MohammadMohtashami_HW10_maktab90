@@ -6,9 +6,11 @@ const variants = {
   filter:
     "h-10 px-6 inline-flex justify-center items-center border border-gray-300 rounded-3xl",
   desktop: "h-10 inline-flex justify-center items-center gap-4",
+  desktopFilter:
+    " bg-trancparent p-2 flex gap-2 items-center hover:text-gray-700",
 };
 
-export default function button(text, icon, option, variant = "mobile") {
+export default function button(text = "", icon, option, variant = "mobile") {
   if (icon) {
     return elem({
       name: "button",
