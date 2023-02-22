@@ -2,17 +2,18 @@ import productSection from "../../layout/productSection/index";
 import header from "../../components/header/index";
 import sidebar from "../../layout/sidebar";
 import elem from "../../library/createElement/index";
+import sidebarContent from "../../components/sidebarContent/index";
 
 export default function desktop() {
   return [
     header(),
     elem({
       name: "div",
-      className: "p-4 w-full mx-auto mt-16 flex gap-2 max-w-[1440px]",
+      className: " max-w-[1440px] p-4 w-full mx-auto flex gap-2",
       child: [
-        sidebar(),
+        sidebarContent(),
         productSection({
-          container: "",
+          container: "mr-[255px] mt-16",
           loc: "text-left",
         }),
       ],
