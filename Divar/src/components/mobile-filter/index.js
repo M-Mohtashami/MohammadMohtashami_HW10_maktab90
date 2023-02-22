@@ -14,17 +14,17 @@ const items = [
     class: "text-gray-400",
   },
   {
-    text: "خودرو‌سواری",
+    text: "خودرو‌ سواری",
     src: "",
     class: "text-gray-400",
   },
   {
-    text: "فروش‌آپارتمان",
+    text: "فروش‌ آپارتمان",
     src: "",
     class: "text-gray-400",
   },
   {
-    text: "اجاره‌آپارتمان",
+    text: "اجاره‌ آپارتمان",
     src: "",
     class: "text-gray-400",
   },
@@ -34,7 +34,7 @@ const items = [
     class: "text-gray-400",
   },
   {
-    text: "صندلی‌و‌نیمکت",
+    text: "صندلی‌ و‌ نیمکت",
     src: "",
     class: "text-gray-400",
   },
@@ -44,7 +44,7 @@ const items = [
     class: "text-gray-400",
   },
   {
-    text: "وسایل‌شخصی",
+    text: "وسایل‌ شخصی",
     src: "",
     class: "text-gray-400",
   },

@@ -23,14 +23,28 @@ export default function button(text = "", icon, option, variant = "mobile") {
           alt: text,
           child: [],
         }),
-        text,
+        elem({
+          name: "span",
+          className: "",
+          src: icon,
+          alt: text,
+          child: [text],
+        }),
       ],
     });
   } else {
     return elem({
       name: "button",
       className: `${variants[variant]} ${option}`,
-      child: [text],
+      child: [
+        elem({
+          name: "span",
+          className: "truncate",
+          src: icon,
+          alt: text,
+          child: [text],
+        }),
+      ],
     });
   }
 }
