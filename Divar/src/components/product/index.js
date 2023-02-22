@@ -7,15 +7,16 @@ export default function product(obj) {
     child: [
       elem({
         name: "div",
-        className: "flex flex-col justify-between",
+        className: "flex flex-col justify-between gap-2 w-6/12 ",
         child: [
           elem({
             name: "div",
-            className: "mb-10",
+            className: "",
             child: [
               elem({
                 name: "h3",
-                className: "text-gray-900 text-lg",
+                className:
+                  "text-gray-900 text-md truncate overflow-ellipsis overflow-hidden",
                 child: [obj.title],
               }),
             ],
@@ -36,7 +37,8 @@ export default function product(obj) {
               }),
               elem({
                 name: "p",
-                className: "text-gray-400 text-xs",
+                className:
+                  "text-gray-400 text-xs truncate overflow-ellipsis overflow-hidden",
                 child: [
                   elem({
                     name: "span",
@@ -52,13 +54,26 @@ export default function product(obj) {
       }),
       elem({
         name: "div",
-        className: "rounded-md overflow-hidden w-40 h-36",
+        className: "self-end w-1/12",
+        child: [
+          elem({
+            name: "img",
+            src: "./src/assets/svg/chat.svg",
+            alt: "chat",
+            className: "",
+            child: [],
+          }),
+        ],
+      }),
+      elem({
+        name: "div",
+        className: "w-5/12 self-end justify-self-end ",
         child: [
           elem({
             name: "img",
             src: obj.src,
             alt: obj.title,
-            className: "w-full h-full object-fill",
+            className: " rounded-md",
             child: [],
           }),
         ],
