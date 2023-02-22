@@ -52,13 +52,13 @@ export default function product(obj) {
       }),
       elem({
         name: "div",
-        className: "rounded-md overflow-hidden",
+        className: "rounded-md overflow-hidden w-40 h-36",
         child: [
           elem({
             name: "img",
             src: obj.src,
             alt: obj.title,
-            className: "w-40 h-36",
+            className: "w-full h-full object-fill",
             child: [],
           }),
         ],

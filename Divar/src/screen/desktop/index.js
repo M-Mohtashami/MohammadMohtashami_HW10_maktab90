@@ -9,7 +9,7 @@ export default function desktop() {
     header(),
     elem({
       name: "div",
-      className: " max-w-[1440px] p-4 w-full mx-auto flex gap-2",
+      className: " max-w-[1440px] min-w-[1000px] p-4 w-full mx-auto flex gap-2",
       child: [
         sidebarContent(),
         productSection({
