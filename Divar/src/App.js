@@ -23,6 +23,7 @@ export default function App() {
   if (isMobileTablet()) {
     return elem({
       name: "div",
+      ClassName: "w-screen h-screen",
       child: touchScreen(),
     });
   } else {

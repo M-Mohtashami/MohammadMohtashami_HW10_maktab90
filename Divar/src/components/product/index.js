@@ -33,7 +33,9 @@ export default function product(obj) {
               elem({
                 name: "p",
                 className: "text-gray-400 text-sm",
-                child: [obj.price + " تومان"],
+                child: [
+                  Intl.NumberFormat("fa-IR").format(obj.price) + " تومان",
+                ],
               }),
               elem({
                 name: "p",
